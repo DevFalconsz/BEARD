@@ -15,6 +15,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#agendamento">Agendamento</a></li>
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#painel">Painel</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -33,19 +34,7 @@
 
         <section id="agendamento" class="screen">
             <h2>Agende seu horário</h2>
-            <form id="appointment-form">
-                <input type="text" id="name" placeholder="Nome" required>
-                <input type="email" id="email" placeholder="E-mail" required>
-                <input type="tel" id="phone" placeholder="Telefone" required>
-                <input type="date" id="date" required>
-                <select id="service" required>
-                    <option value="">Selecione o serviço</option>
-                    <option value="corte">Corte de Cabelo</option>
-                    <option value="barba">Barba</option>
-                    <option value="combo">Combo (Corte + Barba)</option>
-                </select>
-                <button type="submit">Agendar</button>
-            </form>
+            <div id="appointment-form-container"></div>
             <button class="scroll-btn" data-target="servicos">Próximo</button>
         </section>
 
@@ -68,6 +57,12 @@
                     <p>Hidratação e cuidados especiais para cabelo e barba.</p>
                 </div>
             </div>
+            <button class="scroll-btn" data-target="painel">Próximo</button>
+        </section>
+
+        <section id="painel" class="screen">
+            <h2>Painel de Agendamentos</h2>
+            <div id="appointments-panel"></div>
             <button class="scroll-btn" data-target="home">Voltar ao Topo</button>
         </section>
     </main>
