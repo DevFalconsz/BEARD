@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { supabase } from '../../lib/supabase'
+import { supabase } from '../lib/supabase'
 import { format } from 'date-fns'
 
 const BUSINESS_HOURS = {
@@ -41,13 +41,13 @@ const AppointmentForm: React.FC = () => {
   }
 
   const generateTimeSlots = () => {
-    const slots = []
+    const slots: string[] = []; // Especifica que o array conterá strings
     for (let hour = BUSINESS_HOURS.start; hour < BUSINESS_HOURS.end; hour++) {
-      slots.push(`${hour.toString().padStart(2, '0')}:00`)
-      slots.push(`${hour.toString().padStart(2, '0')}:30`)
+      slots.push(`${hour.toString().padStart(2, '0')}:00`);
+      slots.push(`${hour.toString().padStart(2, '0')}:30`);
     }
-    return slots
-  }
+    return slots;
+  };  
 
   return (
     <form onSubmit={handleSubmit} className="appointment-form">
