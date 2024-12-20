@@ -84,7 +84,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--background-color);
     padding: 1rem;
-    min-height: 100px; /* Ajuste conforme necessário */
+    min-height: 120px; 
     display: flex;
     justify-content: center;
     align-items: center;
