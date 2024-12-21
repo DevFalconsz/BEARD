@@ -2,11 +2,12 @@
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background-image: url('../images/hero-background.jpg');
+    background-image: url('../images/hero.png');
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
     /*color: var(--background-color);**/
-    color: #000000;
+    color: #ffffff;
 }
 
 .hero h1 {
